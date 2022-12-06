@@ -38,12 +38,13 @@
 # 📖 [Awesome books] <a name="about-project"></a>
 
 
-**[Awesome books]** is a project that receive 2 values (a book title and its author) and save them in the local storage when you click on add button. The books saved on local storage are displayed in the HTML page, every "book" displayed has a delete button in case you want delete it.
+**To_do_list** is a project that create a editable to do list. You can edit, check and delete your tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
 - CSS
 - JavaScript
+- Webpack
 
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -52,9 +53,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[This project is using an array of objects to save the values]**
-- **[It have 2 Functions, one to add the books and other to delete them]**
-- **[All data is stored it the localStorage]**
+- **This first version can select the task**
+- **It is posible to change the task**
+- **The background of the task change its color when is selected**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,8 +88,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 - Go to this repo and copy the project link
-        https://github.com/roodjinocherilus/Awesome.git
-- Open your terminal and clone the repo with this command "git clone https://github.com/roodjinocherilus/Awesome.git"
+        https://github.com/sambeck87/to_Do_list
+- Open your terminal and clone the repo with this command "git clone https://github.com/sambeck87/to_Do_list.git"
 - Now, you have a copy on your pc. 
 
 
@@ -127,20 +128,14 @@ Github Pages
 - Twitter: [@sambeck4488](https://twitter.com/sambeck4488)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/sandro-israel-hern%C3%A1ndez-zamora-899386a4/)
 
-👤 **Roodjino Cherilus**
-
-- GitHub: [@roodjinocherilus](https://github.com/roodjinocherilus)
-- Twitter: [@roodjinocherilus](https://twitter.com/roodjinocherilus)
-- LinkedIn: [LinkedIn](https://github.com/roodjinocherilus)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[The project will be stylized]**
-- [ ] **[A navigator bar will be added]**
+- [ ] **This project will be able to save the tasks**
+- [ ] **This project will be able to delete the tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
