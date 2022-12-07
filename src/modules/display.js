@@ -1,31 +1,19 @@
 import '../images/dots.svg';
-
-const tasks = [
-  {
-    description: 'Wash the dishes',
-    completed: false,
-    index: 0,
-  },
-  {
-    description: 'sweep the house',
-    completed: false,
-    index: 1,
-  },
-  {
-    description: 'fold the clothes',
-    completed: false,
-    index: 2,
-  },
-];
-
-let fill = '';
+import '../images/trash.svg';
 
 const Display = () => {
-  for (let i = 0; i < tasks.length; i += 1) {
-    const { description, index } = tasks[i];
-    fill += `<div class="center" id="cont${i}"><input class='check' type="checkbox" name="tasks" id="task${index}" value="${i}"><label for="task${index}" class = "description"><input type="text" class = "description" id="${i}" value="${description}"></label><img src="./images/dots.svg" alt="move" class="icon"></div>`;
+  let fill = '';
+  let data = localStorage.getItem('tasks');
+  data = JSON.parse(data);
+  if (data === null) {
+    return 0;
+  }
+  for (let i = 0; i < data.length; i += 1) {
+    const { description, index } = data[i];
+    fill += `<div class="center" id="cont${i}"><input class='check' type="checkbox" name="tasks" id="task${index}" value="${i}"><label for="task${index}" class = "description"><input type="text" class = "description" id="${i}" value="${description}"></label><img src="./images/dots.svg" alt="move" class="icon dot${i}"><button type="button" id="trash${i}" value="${i}" class="btn hide"><img src="./images/trash.svg" alt="trash"></button></div>`;
   }
   document.getElementById('tasks').innerHTML = `${fill}`;
+  return 0;
 };
 
 export default Display;
