@@ -133,3 +133,14 @@ input[type="checkbox"]:checked + label {
 .white {
   background-color: white;
 }
+
+.hide {
+  display: none;
+}
+
+.btn {
+  margin-right: 30px;
+  background-color: transparent;
+  border: none;
+  z-index: 1;
+}
