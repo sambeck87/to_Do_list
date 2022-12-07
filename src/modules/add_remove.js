@@ -20,9 +20,7 @@ export default class Tasks {
     if (!this.storage) {
       let allTasks = localStorage.getItem('tasks');
       allTasks = JSON.parse(allTasks);
-      console.log(allTasks);
-      let filtr = allTasks.filter(done => done.complete === false);
-      console.log(filtr);
+      let filtr = allTasks.filter((done) => done.complete === false);
       filtr = JSON.stringify(filtr);
       localStorage.setItem('tasks', filtr);
     }

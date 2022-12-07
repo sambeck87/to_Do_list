@@ -8,7 +8,7 @@ import checkbox from './modules/check_box.js';
 import NewTask from './modules/constructor.js';
 import restIndex from './modules/rest_index.js';
 import Tasks from './modules/add_remove.js';
-import setup from './modules/setup.js'
+import setup from './modules/setup.js';
 
 display();
 backgroud();
@@ -43,7 +43,6 @@ const clear = document.getElementById('clear_btn');
 clear.addEventListener('click', () => {
   const call = new Tasks(null, true, index);
   call.remove();
-  
   restIndex();
   // eslint-disable-next-line no-restricted-globals
   location.reload();
