@@ -26,6 +26,13 @@ h1 {
   align-items: center;
   border-bottom: solid 2px rgb(232, 231, 231);
   height: 70px;
+  position: relative;
+}
+
+.own {
+  position: absolute;
+  left: 50px;
+  width: 93%;
 }
 
 #refres_icon {

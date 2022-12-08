@@ -8,10 +8,12 @@ import checkbox from './modules/check_box.js';
 import NewTask from './modules/constructor.js';
 import restIndex from './modules/rest_index.js';
 import Tasks from './modules/add_remove.js';
+import setup from './modules/setup.js';
 
 display();
 backgroud();
 checkbox();
+window.addEventListener('load', setup);
 
 let index;
 let check = localStorage.getItem('tasks');
