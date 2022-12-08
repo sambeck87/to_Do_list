@@ -53,9 +53,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **This first version can select the task**
-- **It is posible to change the task**
-- **The background of the task change its color when is selected**
+- **In this version you can add, delete or change the content of your tasks**
+- **All tasks are saved in the local storage**
+- **You can check and delete the done tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,8 +134,8 @@ Github Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **This project will be able to save the tasks**
-- [ ] **This project will be able to delete the tasks**
+- [ ] **This project will be able to drag a task to change its order**
+- [ ] **This project will be stylized to bring a better experience**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
