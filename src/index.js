@@ -78,3 +78,37 @@ eraseBtn.addEventListener('click', () => {
   // eslint-disable-next-line no-restricted-globals
   location.reload();
 });
+
+const dragBtn = document.querySelectorAll('.icon');
+dragBtn.forEach((btn) => {
+  btn.addEventListener('mousedown', () => {
+    const value = btn.value;
+
+    const sibilings = document.querySelectorAll('.center');
+    sibilings.forEach(element => {
+      element.addEventListener('dragover', (e) => {
+        e.preventDefault();
+      })
+      element.addEventListener('drop', () => {
+        const sibilingId = element.id;
+        let index = sibilingId.replace(/[^0-9]/g, "");
+        let allData = localStorage.getItem('tasks');
+        allData = JSON.parse(allData);
+        const temp = allData.splice(value, 1);
+        let arr1 = [...allData];
+        let arr2 = [...allData];
+        arr2 = arr1.splice(0, index);
+        console.log(arr1);
+        console.log(arr2);
+        //console.log(temp);
+        let arr = [...arr2, ...temp, ...arr1];
+        console.log(arr);
+        arr = JSON.stringify(arr);
+        localStorage.setItem('tasks', arr);
+        restIndex();
+        // eslint-disable-next-line no-restricted-globals
+        location.reload();
+      })
+    });
+  })
+});
