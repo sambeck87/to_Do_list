@@ -64,7 +64,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](Pending...)
+- [Live Demo Link](https://sambeck87.github.io/to_Do_list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
