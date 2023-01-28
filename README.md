@@ -35,7 +35,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome books] <a name="about-project"></a>
+# 📖 Todo List <a name="about-project"></a>
 
 
 **To_do_list** is a project that create a editable to do list. You can edit, check and delete your tasks.
